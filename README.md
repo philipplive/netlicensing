@@ -13,10 +13,6 @@ $nl->createLicensee('PMWE4TSJY','UserID123',true);
 $nl->getLicenseeById('UserID123')->getShopURL();
 ```
 
-### Widgets
-Folgende Widgets werden aktuell angeboten:
-* Öffnungszeiten inkl. Feiertage
-
 ## Installation
 
 Um das Plugin zu installieren, erstellen Sie bitte folgenden Ordner "/wp-content/plugins/**netlicensing**" und extrahieren den Zip-Download von GitHub direkt hinein. Das Plugin kann nun im WordPress Backend aktiviert werden. Im Hauptmenu erscheint nun ein entsprechender Menupunkt "NetLicensing".
