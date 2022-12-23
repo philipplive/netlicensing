@@ -1,15 +1,17 @@
 # NetLicensing API
 
-Mit diesem Plugin kann direkt die NetLicensing API von https://netlicensing.io/ angesprochen werden.
+Mit diesem Word-Press Plugin kann direkt die NetLicensing API von https://netlicensing.io/ angesprochen werden.
+
+![banner](./tpl/banner.jpg)
 
 ## Einbinden in Wordpress
 ```
 $nl = NetLicensingSystem::getInstance();
 
-// User Anlegen
+// Lizenznehmer anlegen
 $nl->createLicensee('PMWE4TSJY','UserID123',true);
 
-// Shop-URL von bestehendem User abfragen
+// Shop-URL von bestehendem Lizenznehmer abfragen
 $nl->getLicenseeById('UserID123')->getShopURL();
 ```
 
