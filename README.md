@@ -1,6 +1,6 @@
-# NetLicensing API
+# NetLicensing WordPress Plugin
 
-Mit diesem Word-Press Plugin kann direkt die NetLicensing API von https://netlicensing.io/ angesprochen werden.
+Mit diesem WordPress-Plugin kann direkt die NetLicensing API von https://netlicensing.io/ angesprochen werden.
 
 ![banner](./tpl/banner.jpg)
 
