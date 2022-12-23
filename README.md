@@ -4,7 +4,7 @@ Mit diesem WordPress-Plugin kann direkt die NetLicensing API von https://netlice
 
 ![banner](./tpl/banner.jpg)
 
-## Einbinden in Wordpress
+## Einbinden in WordPress
 ```
 $nl = NetLicensingSystem::getInstance();
 
