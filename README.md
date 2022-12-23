@@ -17,6 +17,6 @@ $nl->getLicenseeById('UserID123')->getShopURL();
 
 ## Installation
 
-Um das Plugin zu installieren, erstellen Sie bitte folgenden Ordner "/wp-content/plugins/**netlicensing**" und extrahieren den Zip-Download von GitHub direkt hinein. Das Plugin kann nun im WordPress Backend aktiviert werden. Im Hauptmenu erscheint nun ein entsprechender Menupunkt "NetLicensing".
+Um das Plugin zu installieren, erstellen Sie bitte folgenden Ordner "/wp-content/plugins/**netlicensing**" und extrahieren den Zip-Download von GitHub direkt hinein. Das Plugin kann nun im WordPress Backend aktiviert werden. Im Hauptmenu erscheint ein entsprechender Menupunkt "NetLicensing".
 
 Um nun die Schnittstelle nutzen zu können, muss im Plugin ein API-Token hinterlegt werden. Der API-Token hierfür kann im NetLicensing-Backend generiert werden. 
