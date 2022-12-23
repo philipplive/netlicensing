@@ -1,4 +1,4 @@
-function updateCycly(){
+function updateNetlicensing(){
 	var dialog = document.querySelector('.netlicensing-update-dialog');
 
 	HfCore.request('netlicensing/update').then(data => {

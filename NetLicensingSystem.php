@@ -62,7 +62,6 @@ class NetLicensingSystem extends HfCore\System {
 	/**
 	 * @param string $id
 	 * @return \NetLicensing\Licensee
-	 * @throws Exception
 	 */
 	public function getLicenseeById(string $id): ?\NetLicensing\Licensee {
 		$item = new \NetLicensing\Licensee($this->getNetLicensingAPI());
@@ -74,6 +73,9 @@ class NetLicensingSystem extends HfCore\System {
 		return $item;
 	}
 
+	/**
+	 * @return \NetLicensing\Licensee[]
+	 */
 	public function getLicensees(): array {
 		$items = [];
 
@@ -90,4 +92,18 @@ class NetLicensingSystem extends HfCore\System {
 		$this->getNetLicensingAPI()->request('licensee', ['productNumber' => $productNumber, 'active' => $active, 'number' => $number]);
 	}
 
+	/**
+	 * @return \NetLicensing\Product[]
+	 */
+	public function getProducts(): array {
+		$items = [];
+
+		foreach ($this->getNetLicensingAPI()->request(['product'], null, 'GET')['items']['item'] as $data) {
+			$item = new \NetLicensing\Product($this->getNetLicensingAPI());
+			$item->fetchIn($data);
+			$items[] = $item;
+		}
+
+		return $items;
+	}
 }

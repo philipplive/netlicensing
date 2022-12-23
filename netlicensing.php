@@ -26,6 +26,7 @@ if (!class_exists('HfCore\System'))
 // NetLicensing
 require_once('objects/ApiObject.php');
 require_once('objects/Licensee.php');
+require_once('objects/Product.php');
 require_once('NetLicensingSystem.php');
 require_once('NetLicensingAPI.php');
 

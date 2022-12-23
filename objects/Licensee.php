@@ -4,7 +4,7 @@ namespace NetLicensing;
 
 class  Licensee extends ApiObject {
 	/**
-	 * Kunden ID
+	 * Lizenznehmer Id
 	 * @var string
 	 */
 	public string $number;
@@ -15,6 +15,11 @@ class  Licensee extends ApiObject {
 	 */
 	public string $productNumber;
 
+	/**
+	 * Aktiv?
+	 * @var bool
+	 */
+	public bool $active;
 
 	public function fetchIn(array $data) {
 		$this->number = $data['property'][0]['value'];
