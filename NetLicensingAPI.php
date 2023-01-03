@@ -37,6 +37,10 @@ class NetLicensingAPI {
 
 		$res = $curl->exec();
 
+		// Debug
+		//if($res->httpCode != 200)
+		//	print_r($res->getFromJSON(true));
+
 		if ($res->httpCode == 401)
 			throw new Exception('Schlüssel ungültig');
 		else if ($res->httpCode == 400)

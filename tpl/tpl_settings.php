@@ -1,4 +1,4 @@
-<div class="wrap">
+<div class="wrap netlicensing">
 	<h2>NetLicensing Plugin</h2>
 	<?php if (!$this->getGitHub()->isUpToDate()) { ?>
 		<div class="update-nag notice notice-error inline cycly-update-dialog">
@@ -29,4 +29,7 @@
 			   onclick="HfCore.request('netlicensing/cleancache');"
 			   class="button button-primary"/>
 	</form>
+
+	<hr>
+	<div><span class="copyright">Copyright by <a target="_blank" href="https://www.hostfactory.ch/">hostfactory.ch</a></span></div>
 </div>

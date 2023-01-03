@@ -30,4 +30,10 @@ class  Licensee extends ApiObject {
 	public function getShopURL(): string {
 		return $this->api->request('token', ['tokenType' => 'SHOP', 'licenseeNumber' => $this->number])['items']['item'][0]['property'][4]['value'];
 	}
+
+	public function getLicences() : array {
+		throw new \Exception('Not implementet');
+		//print_r($this->api->request(['licensee',$this->number,'validate'], [],'POST'));
+		//return [];
+	}
 }

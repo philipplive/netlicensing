@@ -18,8 +18,7 @@ class NetLicensingBackend extends NetLicensingSystem {
 	public function addOptionPage() {
 		add_menu_page(
 			'NetLicensing Optionen',
-			//$this->getGitHub()->isUpToDate() ? 'NetLicensing' : 'NetLicensing <span class="update-plugins">!</span>',
-			'NetLicensing',
+			$this->getGitHub()->isUpToDate() ? 'NetLicensing' : 'NetLicensing <span class="update-plugins">!</span>',
 			'manage_options',
 			'netlicensing',
 			function () {
