@@ -52,7 +52,7 @@ class NetLicensingSystem extends HfCore\System {
 		$this->getGitHub()->update();
 	}
 
-	protected function getNetLicensingAPI(): NetLicensingAPI {
+	public function getNetLicensingAPI(): NetLicensingAPI {
 		if (!$this->api)
 			$this->api = new NetLicensingAPI(get_option('netlicensing_api_key'));
 
