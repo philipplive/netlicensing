@@ -10,7 +10,7 @@
  * Plugin Name:       	NetLicensing API
  * Plugin URI:        	https://hostfactory.ch
  * Description:       	NetLicensing API
- * Version:           	0.0.0.1
+ * Version:           	0.0.0.2
  * Requires at least: 	5.0
  * Requires PHP:     	8.1
  * Author:           	Optimanet Schweiz AG
